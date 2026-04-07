@@ -1,0 +1,56 @@
+
+<!-- The start of the structure of my form -->
+
+<!DOCTYPE html>
+	<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Contact Me! </title>
+<!-- Linking it to my CSS file -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1> Contact Me! </h1>
+	<form id="contactForm">
+	
+	<!-- The area to input the users name -->
+	<label> Name: </label>
+	<br>
+		<input type="text" id="name">
+		<p id="nameError" class="error"></p>
+		
+	<!-- The area to input the users emai; -->	
+	<label> Email: </label>
+	<br>
+		<input type="text" id="email">
+		<p id="emailError" class="error"></p>
+		
+	<!-- The area to add an additional message -->	
+	<label> Message: </label>
+	<br>
+		<textarea id="message"></textarea>
+		<p id="messageError" class="error"></p>
+		
+	<!-- The button to click submit when completing the form -->
+<button type="submit">Submit </button>
+</form>
+
+<!-- The modal/pop up message section once the form is completed -->
+
+<div id="modal" class="modal">
+	<div class="modal-content">
+	<span id="closeBtn">&times;</span>
+	
+<!-- Message shown -->
+
+<h3> Form Submitted! </h3>
+<p id="modalText"></p>
+
+</div>
+</div>
+
+<!-- Linking it to my original JS script -->
+<script src="script.js"></script>
+
+</body>
+</html>
